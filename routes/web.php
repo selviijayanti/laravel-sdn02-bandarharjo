@@ -79,3 +79,7 @@ Route::get('/sarapan_bersama', function () {
 Route::get('/menanam', function () {
     return view('menanam');
 });
+
+Route::get('/akademik/kalender-pendidikan', function () {
+    return view('akademik.kalender_pendidikan');
+});
