@@ -73,7 +73,7 @@
                 <li><a class="dropdown-item" href="#">EKSTRAKULIKULER</a></li>
                 <li><a class="dropdown-item" href="#">PRESTASI SISWA</a></li>
                 <li><a class="dropdown-item" href="#">SANG JUARA</a></li>
-                <li><a class="dropdown-item" href="#">E-BOOK SISWA</a></li>
+                <li><a class="dropdown-item" href="/ebook">E-BOOK SISWA</a></li>
                 <li><a class="dropdown-item" href="#">VIDEO PEMBELAJARAN</a></li>
             </ul>
         </div>
