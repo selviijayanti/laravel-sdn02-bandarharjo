@@ -56,7 +56,7 @@
     <div class="d-flex justify-content-evenly">
         <a class="btn btn-primary" href="/" role="button">
             <img src="images/Beranda.png" class="d-block" alt="">
-            BERANDA
+            RUMAH
         </a>
         <a class="btn btn-primary" href="/profil" role="button">
             <img src="images/Profil.png" class="d-block" alt="">
