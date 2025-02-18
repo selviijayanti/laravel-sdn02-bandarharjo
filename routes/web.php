@@ -83,3 +83,7 @@ Route::get('/menanam', function () {
 Route::get('/akademik/kalender-pendidikan', function () {
     return view('akademik.kalender_pendidikan');
 });
+
+Route::get('/galeri/galeri-foto', function () {
+    return view('galeri.galeri_foto');
+});
