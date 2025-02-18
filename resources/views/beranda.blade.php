@@ -52,31 +52,39 @@
 
 <body class="antialiased">
 
-  <!--example button-->
-  <div class="d-flex justify-content-evenly">
-    <a class="btn btn-primary" href="/" role="button">
-      <img src="images/Beranda.png" class="d-block" alt="">
-      BERANDA
-    </a>
-    <a class="btn btn-primary" href="/profil" role="button">
-      <img src="images/Profil.png" class="d-block" alt="">
-      PROFIL
-    </a>
-    <div class="dropdown">
-      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-        data-bs-toggle="dropdown" aria-expanded="false">
-        <img src="images/akademik.png" class="d-block" alt="">
-        AKADEMIK
-      </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-        <li><a class="dropdown-item" href="#">KURIKULUM</a></li>
-        <li><a class="dropdown-item" href="#">KALENDER PENDIDIKAN</a></li>
-        <li><a class="dropdown-item" href="#">EKSTRAKULIKULER</a></li>
-        <li><a class="dropdown-item" href="#">PRESTASI SISWA</a></li>
-        <li><a class="dropdown-item" href="#">SANG JUARA</a></li>
-        <li><a class="dropdown-item" href="/ebook">E-BOOK SISWA</a></li>
-        <li><a class="dropdown-item" href="#">VIDEO PEMBELAJARAN</a></li>
-      </ul>
+    <!--example button-->
+    <div class="d-flex justify-content-evenly">
+        <a class="btn btn-primary" href="/" role="button">
+            <img src="images/Beranda.png" class="d-block" alt="">
+            RUMAH
+        </a>
+        <a class="btn btn-primary" href="/profil" role="button">
+            <img src="images/Profil.png" class="d-block" alt="">
+            PROFIL
+        </a>
+        <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="images/akademik.png" class="d-block" alt="">
+                AKADEMIK
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">KURIKULUM</a></li>
+                <li><a class="dropdown-item" href="#">KALENDER PENDIDIKAN</a></li>
+                <li><a class="dropdown-item" href="#">EKSTRAKULIKULER</a></li>
+                <li><a class="dropdown-item" href="#">PRESTASI SISWA</a></li>
+                <li><a class="dropdown-item" href="#">SANG JUARA</a></li>
+                <li><a class="dropdown-item" href="/ebook">E-BOOK SISWA</a></li>
+                <li><a class="dropdown-item" href="#">VIDEO PEMBELAJARAN</a></li>
+            </ul>
+        </div>
+        <a class="btn btn-primary" href="/ekskul" role="button">Ekskul</a>
+        <a class="btn btn-primary" href="/prestasi" role="button">Prestasi Siswa</a>
+        <a class="btn btn-primary" href="/galerifoto" role="button">Galeri Foto</a>
+        <a class="btn btn-primary" href="/galerivideo" role="button">Galeri Video</a>
+        <a class="btn btn-primary" href="/berita" role="button">Berita</a>
+        <a class="btn btn-primary" href="/contact" role="button">Contact</a>
+        <a class="btn btn-primary" href="/pengaduan" role="button">Pengaduan</a>
+
     </div>
     <a class="btn btn-primary" href="/ekskul" role="button">Ekskul</a>
     <a class="btn btn-primary" href="/prestasi" role="button">Prestasi Siswa</a>
