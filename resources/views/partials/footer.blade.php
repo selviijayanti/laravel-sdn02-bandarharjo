@@ -1,44 +1,48 @@
-<footer style="font-family: Arial, sans-serif; color: white;">
+<footer class="text-white">
   <!-- Bagian Atas -->
-  <div
-    style="background-color: #F07C1A; padding: 20px; display: flex; justify-content: space-between; align-items: flex-start;">
+  <div class="row justify-content-between px-4 pt-4 pb-5" style="background-color: #F07C1A;">
     <!-- Kiri: Nama Sekolah dan Sosial Media -->
-    <div style="flex: 1;">
-      <h3 style="margin: 0; font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: 700; color: white;">SDN
-        Bandaharjo 02</h3>
+    <div class="col-8">
+      <div class="font-passion-one text-white fs-4">SDN Bandaharjo 02</div>
 
-      <div style="margin-top: 10px; background-color: white; display: inline-block; padding: 10px; border-radius: 50px;">
-        <a href="#" style="margin: 0 10px; text-decoration: none;">
-          <img src="images/IG.png" alt="Instagram" style="width: 40px;">
+      <div class="mt-2 bg-white d-inline-block p-2 rounded-pill">
+        <a href="#" class="text-decoration-none">
+          <img src="{{ asset('images/IG.png') }}" alt="Instagram" style="width: 40px;" class="mx-2">
         </a>
-        <a href="#" style="margin: 0 10px; text-decoration: none;">
-          <img src="images/X.png" alt="X" style="width: 40px;">
+        <a href="#" class="text-decoration-none">
+          <img src="{{ asset('images/X.png') }}" alt="X" style="width: 40px;" class="me-2">
         </a>
-        <a href="#" style="margin: 0 10px; text-decoration: none;">
-          <img src="images/fb.png" alt="Facebook" style="width: 40px;">
+        <a href="#" class="text-decoration-none">
+          <img src="{{ asset('images/fb.png') }}" alt="Facebook" style="width: 40px;" class="me-2">
         </a>
-        <a href="#" style="margin: 0 10px; text-decoration: none;">
-          <img src="images/youtube.png" alt="YouTube" style="width: 40px;">
+        <a href="#" class="text-decoration-none">
+          <img src="{{ asset('images/youtube.png') }}" alt="YouTube" style="width: 40px;" class="mx-2">
         </a>
       </div>
 
     </div>
 
     <!-- Kanan: Kontak -->
-    <div style="flex: 1; text-align: right;">
-      <div style="display: flex; justify-content: flex-end; align-items: center; margin-bottom: 10px;">
-        <img src="assets/email.png" alt="Email" style="width: 24px; margin-right: 10px;">
+    <div class="col d-flex flex-column gap-2">
+      <div class="font-passion-one text-white fs-3">Contacts</div>
+      <div>
+        <img src="{{ asset('assets/email.png') }}" alt="Email" width="24px" class="me-2">
         <span>sdnbandaharjo02semarang@gmail.com</span>
       </div>
-      <div style="display: flex; justify-content: flex-end; align-items: center;">
-        <img src="assets/telp.png" alt="Telp" style="width: 24px; margin-right: 10px;">
+      <div>
+        <img src="{{ asset('assets/telp.png') }}" alt="Telp" width="24px" class="me-2">
         <span>0243563228</span>
+      </div>
+      <div>
+        <img src="{{ asset('images/location.png') }}" alt="Location" width="20px" class="me-2">
+        <span>Jl. Lodan Raya No. 1, Semarang</span>
       </div>
     </div>
   </div>
 
   <!-- Bagian Bawah -->
-  <div style="background-color: #A65413; padding: 10px; text-align: center;">
-    <p style="margin: 0;">Jl. Lodan Raya No.1 Kel. Bandaharjo, Kec. Semarang Utara, Kota Semarang 50175</p>
+  <div class="text-center p-2" style="background-color: #A65413;">
+    <p class="m-0 font-passion-one fs-5">Jl. Lodan Raya No.1 Kel. Bandaharjo, Kec. Semarang Utara, Kota Semarang 50175
+    </p>
   </div>
 </footer>
