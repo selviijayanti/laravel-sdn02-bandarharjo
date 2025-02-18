@@ -3,7 +3,7 @@
   <ul class="nav container-fluid d-flex justify-content-around">
     <li class="nav-item">
       <div class="nav-icon"><img src="{{ asset('images/Beranda.png') }}" alt=""></div>
-      <a class="nav-link {{ request()->is('/') ? 'active' : '' }}" href="#"
+      <a class="nav-link {{ request()->is('/') ? 'active' : '' }}" href="/"
         {{ request()->is('/') ? 'aria-current="page"' : '' }}>Beranda</a>
     </li>
     <li class="nav-item dropdown">
@@ -12,11 +12,11 @@
         href="#" role="button" aria-expanded="false"
         {{ request()->is('profil*') ? 'aria-current=page' : '' }}>Profil</a>
       <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Sejarah Sekolah</a></li>
-        <li><a class="dropdown-item" href="#">Visi Misi Sekolah</a></li>
-        <li><a class="dropdown-item" href="#">Profil Pendidik</a></li>
-        <li><a class="dropdown-item" href="#">Profil Siswa</a></li>
-        <li><a class="dropdown-item" href="#">Sarana dan Prasarana</a></li>
+        <li><a class="dropdown-item" href="/profil/sejarah-sekolah">Sejarah Sekolah</a></li>
+        <li><a class="dropdown-item" href="/profil/visi-misi">Visi Misi Sekolah</a></li>
+        <li><a class="dropdown-item" href="/profil/profil-pendidik">Profil Pendidik</a></li>
+        <li><a class="dropdown-item" href="/profil/profil-siswa">Profil Siswa</a></li>
+        <li><a class="dropdown-item" href="/profil/sarana-prasarana">Sarana dan Prasarana</a></li>
       </ul>
     </li>
     <li class="nav-item dropdown">
@@ -25,10 +25,10 @@
         href="#" role="button" aria-expanded="false"
         {{ request()->is('akademik*') ? 'aria-current=page' : '' }}>Akademik</a>
       <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Kalender Pendidikan</a></li>
-        <li><a class="dropdown-item" href="#">Ekstrakurikuler</a></li>
-        <li><a class="dropdown-item" href="#">Prestasi Siswa</a></li>
-        <li><a class="dropdown-item" href="#">E-Book Siswa</a></li>
+        <li><a class="dropdown-item" href="/akademik/kalender-pendidikan">Kalender Pendidikan</a></li>
+        <li><a class="dropdown-item" href="/akademik/ekstrakurikuler">Ekstrakurikuler</a></li>
+        <li><a class="dropdown-item" href="/akademik/prestasi-siswa">Prestasi Siswa</a></li>
+        <li><a class="dropdown-item" href="/akademik/ebook-siswa">E-Book Siswa</a></li>
       </ul>
     </li>
     <li class="nav-item dropdown">
@@ -51,8 +51,8 @@
         href="#" role="button" aria-expanded="false"
         {{ request()->is('galeri*') ? 'aria-current=page' : '' }}>Galeri</a>
       <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Galeri Foto</a></li>
-        <li><a class="dropdown-item" href="#">Galeri Video</a></li>
+        <li><a class="dropdown-item" href="/galeri/galeri-foto">Galeri Foto</a></li>
+        <li><a class="dropdown-item" href="/galeri/galeri-video">Galeri Video</a></li>
       </ul>
     </li>
     <li class="nav-item dropdown">
@@ -61,7 +61,7 @@
         href="#" role="button" aria-expanded="false"
         {{ request()->is('pengumuman*') ? 'aria-current=page' : '' }}>Pengumuman</a>
       <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Berita</a></li>
+        <li><a class="dropdown-item" href="/pengumuman/berita">Berita</a></li>
       </ul>
     </li>
     <li class="nav-item dropdown">
@@ -76,11 +76,11 @@
     </li>
     <li class="nav-item">
       <div class="nav-icon"><img src="{{ asset('images/kontak.png') }}" alt=""></div>
-      <a class="nav-link {{ request()->is('kontak') ? 'active' : '' }}" href="#">Kontak</a>
+      <a class="nav-link {{ request()->is('kontak') ? 'active' : '' }}" href="/kontak">Kontak</a>
     </li>
     <li class="nav-item">
       <div class="nav-icon"><img src="{{ asset('images/pengaduan.png') }}" alt=""></div>
-      <a class="nav-link {{ request()->is('pengaduan') ? 'active' : '' }}" href="#">Pengaduan</a>
+      <a class="nav-link {{ request()->is('pengaduan') ? 'active' : '' }}" href="/pengaduan">Pengaduan</a>
     </li>
   </ul>
 </nav>
