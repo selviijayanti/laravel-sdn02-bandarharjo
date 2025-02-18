@@ -67,7 +67,7 @@
   </div>
 
   <!-- Hero -->
-  <div class="font-passion-one container" id="hero">
+  <div class="font-passion-one container mb-5" id="hero">
     <h1 class="text-white display-1">WELCOME TO SDN BANDARHARJO 02</h1>
     <p class="text-white fs-2">Jl. Lodan Raya No.1 Kel. Bandarharjo, Kec. Semarang Utara, Kota Semarang 50175
     </p>
