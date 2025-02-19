@@ -5,7 +5,7 @@
 @section('content')
   <div class="text-center mt-5">
     <h2 class="font-passion-one">
-      E-Book <br>SDN Bandarahrjo 02</h2>
+      KUMPULAN E-BOOK <br>SDN BANDARHARJO 02</h2>
   </div>
 
   <!--atas-->
@@ -14,7 +14,7 @@
       <div class="card shadow rounded-4" style="width: 18rem;">
         <!-- Wrapper untuk gambar agar berada di tengah -->
         <div class="d-flex justify-content-center align-items-center" style="padding: 20px;">
-          <img src="{{ asset('images/ebook1.png') }}" class="card-img-top" alt="..."
+          <img src="{{ asset('images/ebook1.png') }}" class="card-img-top" alt=""
             style="width: 150px; height: auto;">
         </div>
         <!-- Body kartu -->
@@ -30,7 +30,7 @@
       <div class="card shadow rounded-4" style="width: 18rem;">
         <!-- Wrapper untuk gambar agar berada di tengah -->
         <div class="d-flex justify-content-center align-items-center" style="padding: 20px;">
-          <img src="{{ asset('images/ebook2.png') }}" class="card-img-top" alt="..."
+          <img src="{{ asset('images/ebook2.png') }}" class="card-img-top" alt=""
             style="width: 150px; height: auto;">
         </div>
         <!-- Body kartu -->
@@ -46,7 +46,7 @@
       <div class="card shadow rounded-4" style="width: 18rem;">
         <!-- Wrapper untuk gambar agar berada di tengah -->
         <div class="d-flex justify-content-center align-items-center" style="padding: 20px;">
-          <img src="{{ asset('images/ebook3.png') }}" class="card-img-top" alt="..."
+          <img src="{{ asset('images/ebook3.png') }}" class="card-img-top" alt=""
             style="width: 150px; height: auto;">
         </div>
         <!-- Body kartu -->
@@ -65,7 +65,7 @@
       <div class="card shadow rounded-4" style="width: 18rem;">
         <!-- Wrapper untuk gambar agar berada di tengah -->
         <div class="d-flex justify-content-center align-items-center" style="padding: 20px;">
-          <img src="{{ asset('images/ebook4.png') }}" class="card-img-top" alt="..."
+          <img src="{{ asset('images/ebook4.png') }}" class="card-img-top" alt=""
             style="width: 150px; height: auto;">
         </div>
         <!-- Body kartu -->
