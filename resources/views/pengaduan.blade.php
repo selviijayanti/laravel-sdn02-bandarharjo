@@ -3,41 +3,35 @@
 @section('title', 'Pengaduan - SDN BANDARHARJO 02 SEMARANG')
 
 @section('content')
-  <div class="" style="text-align: center; margin-top: 40px; margin-bottom: 40px;">
-    <h2 style="margin: 0; font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: 700; color: rgb(0, 0, 0);">
-      Pengaduan</h2>
+  <div class="text-center my-4">
+    <h2 class="font-passion-one">Pengaduan</h2>
   </div>
-  <form style="width: 400px; margin: auto; font-family: Arial, sans-serif;">
-    <div style="margin-bottom: 15px;">
-      <label for="nama" style="display: block; margin-bottom: 5px; font-weight: bold;">Nama</label>
-      <input type="text" id="nama" placeholder=""
-        style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+  <form class="mx-auto" style="width: 400px; margin-bottom: 6rem;">
+    <div class="mb-3">
+      <label for="nama" class="form-label fw-bold">Nama</label>
+      <input type="text" id="nama" placeholder="" class="form-control border-secondary-subtle" required>
     </div>
-    <div style="margin-bottom: 15px;">
-      <label for="email" style="display: block; margin-bottom: 5px; font-weight: bold;">Email</label>
-      <input type="email" id="email" placeholder=""
-        style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+    <div class="mb-3">
+      <label for="email" class="form-label fw-bold">Email</label>
+      <input type="email" id="email" placeholder="" class="form-control border-secondary-subtle" required>
     </div>
-    <div style="margin-bottom: 15px;">
-      <label for="kontak" style="display: block; margin-bottom: 5px; font-weight: bold;">Nomor Kontak</label>
-      <input type="text" id="kontak" placeholder=""
-        style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+    <div class="mb-3">
+      <label for="kontak" class="form-label fw-bold">Nomor Kontak</label>
+      <input type="text" id="kontak" placeholder="" class="form-control border-secondary-subtle" required>
     </div>
-    <div style="margin-bottom: 15px;">
+    <div class="mb-3">
       <label for="deskripsi" style="display: block; margin-bottom: 5px; font-weight: bold;">Deskripsi</label>
-      <textarea id="deskripsi" rows="4" placeholder=""
-        style="width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; resize: none;"></textarea>
+      <textarea id="deskripsi" rows="4" placeholder="" class="form-control border-secondary-subtle"
+        style="resize: none;" required></textarea>
     </div>
-    <div style="display: flex; align-items: center; margin-bottom: 15px;">
+    <div class="d-flex align-items-center mb-3">
       <div
         style="background-color: #8bc34a; color: white; padding: 8px 15px; border-radius: 4px; margin-right: 10px; font-weight: bold;">
         Sg59h
       </div>
-      <input type="text" placeholder="Masukan Captcha"
-        style="flex: 1; padding: 8px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;">
+      <input type="text" placeholder="Masukkan Captcha" class="form-control border-secondary-subtle" required>
     </div>
-    <button type="submit"
-      style="background-color: #007bff; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; width: 100%;">
+    <button type="submit" class="btn btn-primary w-100">
       SUBMIT
     </button>
   </form>
