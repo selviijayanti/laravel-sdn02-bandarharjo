@@ -25,17 +25,17 @@ img.hero-img {
     margin: 0 24px;
 }
 
-.btn-primary {
+#hero .btn-primary {
     background-color: var(--color-primary);
     border-color: var(--color-primary);
 }
 
-.btn-primary:hover {
+#hero .btn-primary:hover {
     background-color: var(--color-primary-hover);
     border-color: var(--color-primary-hover);
 }
 
-.btn-primary:active {
+#hero .btn-primary:active {
     background-color: var(--color-primary-active) !important;
     border-color: var(--color-primary-active) !important;
 }
