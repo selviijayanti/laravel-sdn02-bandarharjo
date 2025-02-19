@@ -3,7 +3,7 @@
   <ul class="nav container-fluid d-flex justify-content-around">
     <li class="nav-item">
       <div class="nav-icon"><img src="{{ asset('images/Beranda.png') }}" alt=""></div>
-      <a class="nav-link" href="#">Beranda</a>
+      <a class="nav-link" href="/">Beranda</a>
     </li>
     <li class="nav-item dropdown">
       <div class="nav-icon"><img src="{{ asset('images/profil.png') }}" alt=""></div>
@@ -22,10 +22,10 @@
       <a class="nav-link active dropdown-toggle" aria-current="page" data-bs-toggle="dropdown" href="#"
         role="button" aria-expanded="false">Akademik</a>
       <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Kalender Pendidikan</a></li>
-        <li><a class="dropdown-item" href="#">Ekstrakurikuler</a></li>
+        <li><a class="dropdown-item" href="/akademik/kalender-pendidikan">Kalender Pendidikan</a></li>
+        <li><a class="dropdown-item" href="/akademik/ekskul">Ekstrakurikuler</a></li>
         <li><a class="dropdown-item" href="#">Prestasi Siswa</a></li>
-        <li><a class="dropdown-item" href="#">E-Book Siswa</a></li>
+        <li><a class="dropdown-item" href="/akademik/ebook">E-Book Siswa</a></li>
       </ul>
     </li>
     <li class="nav-item dropdown">
