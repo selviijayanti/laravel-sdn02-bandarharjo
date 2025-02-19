@@ -19,9 +19,6 @@ Route::get('/', function () {
 Route::get('/profil', function () {
     return view('profil');
 });
-Route::get('/berita', function () {
-    return view('berita');
-});
 
 Route::get('/akademik/kalender-pendidikan', function () {
     return view('akademik.kalender_pendidikan');
