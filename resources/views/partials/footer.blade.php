@@ -1,4 +1,4 @@
-<footer class="text-white">
+<footer class="text-white container-fluid">
   <!-- Bagian Atas -->
   <div class="row justify-content-between px-4 pt-4 pb-5" style="background-color: #F07C1A;">
     <!-- Kiri: Nama Sekolah dan Sosial Media -->
@@ -41,7 +41,7 @@
   </div>
 
   <!-- Bagian Bawah -->
-  <div class="text-center p-2" style="background-color: #A65413;">
+  <div class="row text-center p-2" style="background-color: #A65413;">
     <p class="m-0 font-passion-one fs-5">Jl. Lodan Raya No.1 Kel. Bandaharjo, Kec. Semarang Utara, Kota Semarang 50175
     </p>
   </div>

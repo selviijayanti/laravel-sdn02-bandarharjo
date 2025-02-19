@@ -88,3 +88,11 @@ img.hero-img {
     width: 100%;
     background: rgba(255, 255, 255, 0.4);
 }
+
+.table th {
+    text-align: center;
+}
+
+.table th[scope="row"] {
+    text-align: right;
+}

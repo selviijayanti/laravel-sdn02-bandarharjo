@@ -22,26 +22,8 @@ Route::get('/profil', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
-Route::get('/ebook', function () {
-    return view('ebook');
-});
-Route::get('/ekskul', function () {
-    return view('ekskul');
-});
-Route::get('/prestasi', function () {
-    return view('prestasi');
-});
-Route::get('/galerifoto', function () {
-    return view('galerifoto');
-});
-Route::get('/galerivideo', function () {
-    return view('galerivideo');
-});
 Route::get('/berita', function () {
     return view('berita');
-});
-Route::get('/pengaduan', function () {
-    return view('pengaduan');
 });
 Route::get('/mpls', function () {
     return view('mpls');
@@ -82,4 +64,32 @@ Route::get('/menanam', function () {
 
 Route::get('/akademik/kalender-pendidikan', function () {
     return view('akademik.kalender_pendidikan');
-});
+})->name('akademik.kalender_pendidikan');
+Route::get('/akademik/ekstrakurikuler', function () {
+    return view('akademik.ekstrakurikuler');
+})->name('akademik.ekstrakurikuler');
+Route::get('/akademik/prestasi-siswa', function () {
+    return view('akademik.prestasi_siswa');
+})->name('akademik.prestasi_siswa');
+Route::get('/akademik/ebook-siswa', function () {
+    return view('akademik.ebook_siswa');
+})->name('akademik.ebook_siswa');
+
+Route::get('/galeri/galeri-foto', function () {
+    return view('galeri.galeri_foto');
+})->name('galeri.galeri_foto');
+Route::get('/galeri/galeri-video', function () {
+    return view('galeri.galeri_video');
+})->name('galeri.galeri_video');
+
+Route::get('/pengumuman/berita', function () {
+    return view('pengumuman.berita');
+})->name('pengumuman.berita');
+
+Route::get('/kontak', function () {
+    return view('kontak');
+})->name('kontak');
+
+Route::get('/pengaduan', function () {
+    return view('pengaduan');
+})->name('pengaduan');
