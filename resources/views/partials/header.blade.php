@@ -2,8 +2,7 @@
   <div class="container-fluid">
     <a class="navbar-brand" href="/">
       <img src="{{ asset('images/logo SD.png') }}" alt="" height="48">
-      <a class="nav-link font-passion-one" aria-current="page" href="/" style="font-size: 32px">SDN
-        BANDARHAJO
+      <a class="nav-link font-passion-one" aria-current="page" href="/" style="font-size: 32px">SDN BANDARHARJO
         02</a>
     </a>
 
@@ -61,7 +60,7 @@
       <i class="bi bi-pencil-square fs-2"></i>
       <div class="d-flex flex-column lh-sm">
         <div class="text-uppercase">Umpan Balik</div>
-        <div class="fw-bold"><a href="#" class="text-black">mengeluh</a></div>
+        <div class="fw-bold"><a href="/pengaduan" class="text-black">mengeluh</a></div>
       </div>
     </div>
   </div>

@@ -3,20 +3,20 @@
   <div class="row justify-content-between px-4 pt-4 pb-5" style="background-color: #F07C1A;">
     <!-- Kiri: Nama Sekolah dan Sosial Media -->
     <div class="col-8">
-      <div class="font-passion-one text-white fs-4">SDN Bandaharjo 02</div>
+      <div class="font-passion-one text-white fs-4">SDN Bandarharjo 02</div>
 
       <div class="mt-2 bg-white d-inline-block p-2 rounded-pill">
         <a href="#" class="text-decoration-none">
-          <img src="{{ asset('images/IG.png') }}" alt="Instagram" style="width: 40px;" class="mx-2">
+          <img src="{{ asset('images/IG.png') }}" alt="Instagram" style="width: 40px;" class="me-1">
         </a>
         <a href="#" class="text-decoration-none">
-          <img src="{{ asset('images/X.png') }}" alt="X" style="width: 40px;" class="me-2">
+          <img src="{{ asset('images/X.png') }}" alt="X" style="width: 40px;" class="me-1">
         </a>
         <a href="#" class="text-decoration-none">
-          <img src="{{ asset('images/fb.png') }}" alt="Facebook" style="width: 40px;" class="me-2">
+          <img src="{{ asset('images/fb.png') }}" alt="Facebook" style="width: 40px;" class="me-1">
         </a>
         <a href="#" class="text-decoration-none">
-          <img src="{{ asset('images/youtube.png') }}" alt="YouTube" style="width: 40px;" class="mx-2">
+          <img src="{{ asset('images/youtube.png') }}" alt="YouTube" style="width: 40px;">
         </a>
       </div>
 
@@ -27,11 +27,11 @@
       <div class="font-passion-one text-white fs-3">Contacts</div>
       <div>
         <img src="{{ asset('assets/email.png') }}" alt="Email" width="24px" class="me-2">
-        <span>sdnbandaharjo02semarang@gmail.com</span>
+        <span>sdnbandarharjo02semarang@gmail.com</span>
       </div>
       <div>
         <img src="{{ asset('assets/telp.png') }}" alt="Telp" width="24px" class="me-2">
-        <span>0243563228</span>
+        <span>(024) 3563228</span>
       </div>
       <div>
         <img src="{{ asset('images/location.png') }}" alt="Location" width="20px" class="me-2">
