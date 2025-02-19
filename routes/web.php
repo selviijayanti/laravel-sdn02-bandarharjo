@@ -22,21 +22,6 @@ Route::get('/profil', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
-Route::get('/ebook', function () {
-    return view('ebook');
-});
-Route::get('/ekskul', function () {
-    return view('ekskul');
-});
-Route::get('/prestasi', function () {
-    return view('prestasi');
-});
-Route::get('/galerifoto', function () {
-    return view('galerifoto');
-});
-Route::get('/galerivideo', function () {
-    return view('galerivideo');
-});
 Route::get('/berita', function () {
     return view('berita');
 });
