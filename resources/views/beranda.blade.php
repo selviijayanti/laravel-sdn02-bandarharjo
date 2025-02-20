@@ -72,7 +72,7 @@
   {{-- galeri foto --}}
   <div class="d-flex justify-content-center my-5">
     <a
-      class="stretched-link btn-primary font-passion-one fs-4 rounded-5 text-white"
+      class="btn-primary font-passion-one fs-4 rounded-5 text-white"
       href="/galeri/galerifoto"
       style="text-decoration: none; padding: 5px 80px"
     >
