@@ -14,8 +14,8 @@
       <ul class="dropdown-menu">
         <li><a class="dropdown-item" href="/profil/sejarah-sekolah">Sejarah Sekolah</a></li>
         <li><a class="dropdown-item" href="/profil/visi-misi">Visi Misi Sekolah</a></li>
-        <li><a class="dropdown-item" href="/profil/profil-pendidik">Profil Pendidik</a></li>
-        <li><a class="dropdown-item" href="/profil/profil-siswa">Profil Siswa</a></li>
+        <li><a class="dropdown-item" href="/profil/pendidik">Profil Pendidik</a></li>
+        <li><a class="dropdown-item" href="/profil/siswa">Profil Siswa</a></li>
         <li><a class="dropdown-item" href="/profil/sarana-prasarana">Sarana dan Prasarana</a></li>
       </ul>
     </li>

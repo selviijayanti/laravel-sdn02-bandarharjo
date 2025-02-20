@@ -33,6 +33,22 @@ Route::get('/akademik/ebook-siswa', function () {
     return view('akademik.ebook_siswa');
 })->name('akademik.ebook_siswa');
 
+Route::get('/profil/sejarah-sekolah', function () {
+    return view('profil.sejarah_sekolah');
+})->name('profil.sejarah_sekolah');
+Route::get('/profil/visi-misi', function () {
+    return view('profil.visi_misi');
+})->name('profil.visi_misi');
+Route::get('/profil/pendidik', function () {
+    return view('profil.pendidik');
+})->name('profil.pendidik');
+Route::get('/profil/siswa', function () {
+    return view('profil.siswa');
+})->name('profil.siswa');
+Route::get('/profil/sarana-prasarana', function () {
+    return view('profil.sarana_prasarana');
+})->name('profil.sarana_prasarana');
+
 Route::get('/galeri/galeri-foto', function () {
     return view('galeri.galeri_foto');
 })->name('galeri.galeri_foto');
