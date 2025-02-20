@@ -70,7 +70,7 @@
     <h1 class="text-white display-1">WELCOME TO SDN BANDARHARJO 02</h1>
     <p class="text-white fs-2">Jl. Lodan Raya No.1 Kel. Bandarharjo, Kec. Semarang Utara, Kota Semarang 50175
     </p>
-    <a href="#" class="btn btn-primary rounded-pill mt-4 px-5 py-2 fs-4">Login</a>
+    <a href="/login" class="btn btn-primary rounded-pill mt-4 px-5 py-2 fs-4">Login</a>
   </div>
 
   <!-- Navbar -->
