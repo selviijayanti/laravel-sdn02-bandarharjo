@@ -50,6 +50,9 @@ Route::get('/profil/pendidik', function () {
 Route::get('/profil/siswa', function () {
     return view('profil.siswa');
 })->name('profil.siswa');
+Route::get('/profil/siswa-kelas', function () {
+    return view('profil.siswa_kelas');
+})->name('profil.siswa_kelas');
 Route::get('/profil/sarana-prasarana', function () {
     return view('profil.sarana_prasarana');
 })->name('profil.sarana_prasarana');
