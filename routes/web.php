@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PendidikController;
+use App\Http\Controllers\SiswaController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -110,3 +111,4 @@ Route::get('/pengaduan', function () {
 })->name('pengaduan');
 
 Route::get('/profil/pendidik', [PendidikController::class, 'index']);
+Route::get('/profil/siswa', [SiswaController::class, 'index']);
