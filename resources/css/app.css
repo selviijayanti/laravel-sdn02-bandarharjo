@@ -96,3 +96,15 @@ img.hero-img {
 .table th[scope="row"] {
     text-align: right;
 }
+
+.border-blue {
+    border: 1px solid #BCE8F1;
+}
+
+.text-table td {
+    color: #333333;
+}
+
+tfoot tr td{
+    border: none !important;
+}
