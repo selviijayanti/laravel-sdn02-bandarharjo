@@ -3,22 +3,47 @@
 @section('title', 'Prestasi Siswa - SDN BANDARHARJO 02 SEMARANG')
 
 @section('content')
-  <div class="text-center" style="margin-top: 40px; margin-bottom: 28px;">
-    <h2 class="font-passion-one">
-      PRESTASI SISWA <br>SDN BANDARHARJO 02</h2>
-  </div>
-  <div class="table-responsive">
-    <table class="table table-bordered table-striped table-hover">
-      <thead>
-        <tr>
-          <th scope="col">No</th>
-          <th scope="col">NISN</th>
-          <th scope="col" style="width: 270px;">Nama Siswa</th>
-          <th scope="col" style="width: 300px;">Asal Sekolah</th>
-          <th scope="col">Kejuaraan</th>
-        </tr>
-      </thead>
-      <tbody>
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="badge rounded-pill px-3 py-2 text-uppercase mb-2" style="background-color: rgba(244, 128, 0, 0.15); color: #e07000; font-weight: 600;">
+          Kebanggaan Sekolah
+        </span>
+        <h2 class="font-passion-one display-6 text-dark mb-1">DAFTAR PRESTASI SISWA</h2>
+        <p class="text-muted mb-0">Rekapitulasi Prestasi & Kejuaraan Siswa SDN Bandarharjo 02 Semarang</p>
+        <div class="mx-auto mt-2" style="width: 60px; height: 3px; background: #f48000; border-radius: 2px;"></div>
+      </div>
+
+      <div class="card border-0 shadow-sm rounded-4 overflow-hidden bg-white mb-4">
+        <div class="card-header bg-white py-3 px-4 d-flex flex-wrap justify-content-between align-items-center gap-3 border-bottom">
+          <div class="d-flex align-items-center">
+            <i class="bi bi-trophy-fill text-warning fs-4 me-2"></i>
+            <div>
+              <h5 class="mb-0 fw-bold text-dark">Data Juara & Penghargaan</h5>
+              <small class="text-muted">Total 100+ prestasi tercatat</small>
+            </div>
+          </div>
+          <div style="min-width: 250px;">
+            <div class="input-group input-group-sm">
+              <span class="input-group-text bg-light border-end-0"><i class="bi bi-search text-muted"></i></span>
+              <input type="text" id="prestasiSearch" class="form-control bg-light border-start-0" placeholder="Cari nama atau kejuaraan...">
+            </div>
+          </div>
+        </div>
+
+        <div class="card-body p-0">
+          <div class="table-responsive">
+            <table class="table table-hover align-middle mb-0" id="prestasiTable">
+              <thead class="table-light text-secondary" style="font-size: 14px;">
+                <tr>
+                  <th scope="col" class="py-3 ps-4" style="width: 60px;">No</th>
+                  <th scope="col" class="py-3" style="width: 130px;">NISN</th>
+                  <th scope="col" class="py-3" style="width: 240px;">Nama Siswa</th>
+                  <th scope="col" class="py-3" style="width: 250px;">Asal Sekolah</th>
+                  <th scope="col" class="py-3 pe-4">Kejuaraan & Tingkat</th>
+                </tr>
+              </thead>
+              <tbody style="font-size: 14px;">
         <tr>
           <th scope="row">1</th>
           <td>0064194726</td>
@@ -729,6 +754,27 @@
             Nasional</td>
         </tr>
       </tbody>
-    </table>
-  </div>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const searchInput = document.getElementById('prestasiSearch');
+      const table = document.getElementById('prestasiTable');
+      if (searchInput && table) {
+        const rows = table.querySelectorAll('tbody tr');
+        searchInput.addEventListener('keyup', function () {
+          const val = this.value.toLowerCase();
+          rows.forEach(row => {
+            const text = row.innerText.toLowerCase();
+            row.style.display = text.includes(val) ? '' : 'none';
+          });
+        });
+      }
+    });
+  </script>
 @endsection

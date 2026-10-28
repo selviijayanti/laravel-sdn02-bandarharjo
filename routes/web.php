@@ -1,8 +1,14 @@
 <?php
 
+use App\Http\Controllers\Admin\BeritaContoller;
+use App\Http\Controllers\Admin\GaleriController;
+use App\Http\Controllers\Admin\LombaController;
 use App\Http\Controllers\PendidikController;
+use App\Http\Controllers\PengaduanController;
 use App\Http\Controllers\SiswaController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -18,12 +24,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('beranda');
 });
-Route::get('/login', function(){
-    return view('login');
-});
-Route::get('/profil', function () {
-    return view('profil');
-});
+
+
 
 Route::get('/akademik/kalender-pendidikan', function () {
     return view('akademik.kalender_pendidikan');
@@ -113,5 +115,69 @@ Route::get('/pengaduan', function () {
     return view('pengaduan');
 })->name('pengaduan');
 
+Route::get('/pramuka', function () {
+    return view('pramuka');
+});
+Route::get('/BTQ', function () {
+    return view('BTQ');
+});
+Route::get('/komputer', function () {
+    return view('komputer');
+});
+Route::get('/taekwondo', function () {
+    return view('taekwondo');
+});
+Route::get('/seni tari', function () {
+    return view('seni tari');
+});
+Route::get('/takraw', function () {
+    return view('takraw');
+});
+Route::get('/volly', function () {
+    return view('volly');
+});
+
 Route::get('/profil/pendidik', [PendidikController::class, 'index']);
 Route::get('/profil/siswa', [SiswaController::class, 'index']);
+
+Route::get('/pengaduan', [PengaduanController::class, 'showForm'])->name('pengaduan.form');
+Route::post('/pengaduan', [PengaduanController::class, 'store'])->name('pengaduan.store');
+
+
+/* 
+    BRJ JOINED THIS GAME
+ */
+
+Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login.form');
+Route::post('/login', [AuthController::class, 'loginWeb'])->name('login.submit');
+
+
+Route::get('/register', [AuthController::class, 'showRegisterForm'])->name('register.form');
+Route::post('/register', [AuthController::class, 'registerWeb'])->name('register.submit');
+
+Route::get('/logout', [AuthController::class, 'adminLogout'])->name('admin.logout');
+/* 
+ADMIN PAGE
+*/
+Route::get('/admin', function () {
+    return redirect('/admin/dashboard');
+});
+
+Route::get('/admin/dashboard', function () {
+    $totalBerita = \App\Models\Admin\Berita::count();
+    $totalGaleri = \App\Models\Admin\Galeri::count();
+    $totalLomba = \App\Models\Admin\Lomba::count();
+    $totalPengaduan = \App\Models\Pengaduan::count();
+
+    return view('admin.dashboard', compact('totalBerita', 'totalGaleri', 'totalLomba', 'totalPengaduan'));
+})->name('admin.dashboard');
+
+// Resource Routes Admin
+Route::resource('/admin/galeri', GaleriController::class);
+Route::resource('/admin/berita', BeritaContoller::class);
+Route::resource('/admin/lomba', LombaController::class);
+
+// Pengaduan Admin
+Route::get('/admin/pengaduan', [PengaduanController::class, 'adminIndex'])->name('admin.pengaduan.index');
+Route::delete('/admin/pengaduan/{id}', [PengaduanController::class, 'destroy'])->name('admin.pengaduan.destroy');
+

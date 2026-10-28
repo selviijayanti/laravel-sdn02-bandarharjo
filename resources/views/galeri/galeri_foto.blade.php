@@ -3,234 +3,135 @@
 @section('title', 'Galeri Foto - SDN BANDARHARJO 02 SEMARANG')
 
 @section('content')
-  <div class="text-center my-5">
-    <h2 class="font-passion-one text-uppercase">Galeri Foto <br>SDN Bandarharjo 02</h2>
-  </div>
-  <div class="row pt-4 p-5">
-    <div class="col-md-4 d-flex justify-content-center">
-      <div class="card shadow rounded-4" style="width: 18rem;">
-        <!-- Wrapper untuk gambar agar berada di tengah -->
-        <div class="d-flex justify-content-center align-items-center p-3 pb-0">
-          <img src="{{ asset('images/MPLS.jpeg') }}" class="card-img-top rounded-3"
-            alt="Masa Pengenalan Lingkungan Sekolah (MPLS) Tahun 2021/2022" style="width: 250px; height: auto;">
-        </div>
-        <!-- Body kartu -->
-        <div class="card-body pt-2 text-center">
-          <h5 class="card-title">Masa Pengenalan Lingkungan Sekolah (MPLS) Tahun 2021/2022</h5>
-          <a href="/mpls" class="btn mt-2 text-white rounded-3" style="background-color: #F48000; width: 150px;">
-            SELENGKAPNYA
-          </a>
-        </div>
+  <section class="py-5 bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="badge rounded-pill px-3 py-2 text-uppercase mb-2" style="background-color: rgba(244, 128, 0, 0.15); color: #e07000; font-weight: 600;">
+          Dokumentasi Visual
+        </span>
+        <h2 class="font-passion-one display-6 text-dark mb-1">GALERI FOTO KEGIATAN</h2>
+        <p class="text-muted mb-0">Rangkaian momen dan kegiatan belajar mengajar di SDN Bandarharjo 02 Semarang</p>
+        <div class="mx-auto mt-2" style="width: 60px; height: 3px; background: #f48000; border-radius: 2px;"></div>
       </div>
-    </div>
 
-    <div class="col-md-4 d-flex justify-content-center">
-      <div class="card shadow rounded-4" style="width: 18rem;">
-        <!-- Wrapper untuk gambar agar berada di tengah -->
-        <div class="d-flex justify-content-center align-items-center p-3 pb-0">
-          <img src="{{ asset('images/asesmen.jpeg') }}" class="card-img-top rounded-3"
-            alt="Simulasi Asesmen Nasional Tahun 2021 Gelombang 2" style="width: 250px; height: auto;">
-        </div>
-        <!-- Body kartu -->
-        <div class="card-body text-center">
-          <h5 class="card-title">Simulasi Asesmen Nasional Tahun 2021 Gelombang 2</h5>
-          <a href="/simulasi_asesmen" class="btn mt-2 text-white rounded-3"
-            style="background-color: #F48000; width: 150px;">
-            SELENGKAPNYA
-          </a>
-        </div>
-      </div>
-    </div>
+      @php
+        $fotos = [
+          [
+            'judul' => 'Masa Pengenalan Lingkungan Sekolah (MPLS)',
+            'img' => 'MPLS.jpeg',
+            'link' => '/mpls',
+            'kategori' => 'Kegiatan Siswa'
+          ],
+          [
+            'judul' => 'Simulasi Asesmen Nasional Gelombang 2',
+            'img' => 'asesmen.jpeg',
+            'link' => '/simulasi_asesmen',
+            'kategori' => 'Asesmen'
+          ],
+          [
+            'judul' => 'Gladi Bersih Asesmen Nasional Gelombang 2',
+            'img' => 'asesmen2.jpeg',
+            'link' => '/glaber_asesmen',
+            'kategori' => 'Asesmen'
+          ],
+          [
+            'judul' => 'Pelaksanaan Asesmen Nasional Gelombang 2',
+            'img' => 'pelaksanaan-asesmen.jpeg',
+            'link' => '/pelaksanaan_asesmen',
+            'kategori' => 'Asesmen'
+          ],
+          [
+            'judul' => 'Kegiatan Survei Lingkungan Belajar oleh Guru & Kepala Sekolah',
+            'img' => 'survei.jpeg',
+            'link' => '/survei_lingkungan',
+            'kategori' => 'Guru & Staf'
+          ],
+          [
+            'judul' => 'Penilaian Kinerja Kepala Sekolah (PKKS)',
+            'img' => 'penilaian-kinerja-kepsek.jpeg',
+            'link' => '/penilaian_pekerja',
+            'kategori' => 'Manajemen'
+          ],
+          [
+            'judul' => 'Kompetisi Sains Nasional (KSN) Tingkat Kota Semarang',
+            'img' => 'kompetisi-sains.jpeg',
+            'link' => '/kompetisi_sains',
+            'kategori' => 'Prestasi'
+          ],
+          [
+            'judul' => 'Bulan Imunisasi Anak Sekolah (BIAS)',
+            'img' => 'imunisasi.jpeg',
+            'link' => '/imunisasi',
+            'kategori' => 'Kesehatan'
+          ],
+          [
+            'judul' => 'Upacara Peringatan HUT KORPRI Ke-51',
+            'img' => 'hut-korps.jpeg',
+            'link' => '/upacara',
+            'kategori' => 'Upacara'
+          ],
+          [
+            'judul' => 'Kegiatan Pembiasaan Sarapan Bersama Menu Sehat',
+            'img' => 'sarapan-bersama.jpeg',
+            'link' => '/sarapan_bersama',
+            'kategori' => 'Pembiasaan'
+          ],
+          [
+            'judul' => 'Studi Tiru Kurikulum Merdeka di SDN Sondakan Surakarta',
+            'img' => 'study.jpeg',
+            'link' => '#',
+            'kategori' => 'Kunjungan'
+          ],
+          [
+            'judul' => 'Gerakan Menanam & Kebersihan Lingkungan Sekolah',
+            'img' => 'menanam.jpeg',
+            'link' => '/menanam',
+            'kategori' => 'Adiwiyata'
+          ],
+        ];
+      @endphp
 
-    <div class="col-md-4 d-flex justify-content-center">
-      <div class="card shadow rounded-4" style="width: 18rem;">
-        <!-- Wrapper untuk gambar agar berada di tengah -->
-        <div class="d-flex justify-content-center align-items-center p-3 pb-0">
-          <img src="{{ asset('images/asesmen2.jpeg') }}" class="card-img-top rounded-3"
-            alt="Gladi Bersih Asesmen Nasional Tahun 2021 Gelombang 2" style="width: 250px; height: auto;">
-        </div>
-        <!-- Body kartu -->
-        <div class="card-body text-center">
-          <h5 class="card-title">Gladi Bersih Asesmen Nasional Tahun 2021 Gelombang 2</h5>
-          <a href="/glaber_asesmen" class="btn mt-2 text-white rounded-3"
-            style="background-color: #F48000; width: 150px;">
-            SELENGKAPNYA
-          </a>
-        </div>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+        @foreach ($fotos as $item)
+          <div class="col">
+            <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden bg-white hover-elevate transition-all">
+              <div class="position-relative overflow-hidden" style="height: 210px;">
+                <img
+                  src="{{ asset('images/' . $item['img']) }}"
+                  class="w-100 h-100"
+                  alt="{{ $item['judul'] }}"
+                  style="object-fit: cover; transition: transform 0.3s ease;"
+                  onmouseover="this.style.transform='scale(1.05)'"
+                  onmouseout="this.style.transform='scale(1)'"
+                />
+                <span class="badge position-absolute top-0 start-0 m-3 px-3 py-2 rounded-pill bg-dark bg-opacity-75 text-white small">
+                  {{ $item['kategori'] }}
+                </span>
+              </div>
+              <div class="card-body p-4 d-flex flex-column justify-content-between">
+                <div>
+                  <h6 class="fw-bold text-dark lh-base mb-3">{{ $item['judul'] }}</h6>
+                </div>
+                <div>
+                  @if ($item['link'] !== '#')
+                    <a
+                      href="{{ url($item['link']) }}"
+                      class="btn btn-sm text-white px-3 py-2 rounded-3 w-100 fw-semibold"
+                      style="background-color: var(--color-primary); box-shadow: 0 4px 10px rgba(244, 128, 0, 0.25);"
+                    >
+                      Lihat Dokumentasi <i class="bi bi-arrow-right ms-1"></i>
+                    </a>
+                  @else
+                    <button class="btn btn-sm btn-light border text-muted px-3 py-2 rounded-3 w-100" disabled>
+                      Dokumentasi Internal
+                    </button>
+                  @endif
+                </div>
+              </div>
+            </div>
+          </div>
+        @endforeach
       </div>
     </div>
-  </div>
-  <div class="row pt-4 p-5">
-    <div class="col-md-4 d-flex justify-content-center">
-      <div class="card shadow rounded-4" style="width: 18rem;">
-        <!-- Wrapper untuk gambar agar berada di tengah -->
-        <div class="d-flex justify-content-center align-items-center p-3 pb-0">
-          <img src="{{ asset('images/pelaksanaan-asesmen.jpeg') }}" class="card-img-top rounded-3"
-            alt="Pelaksanaan Asesmen Nasional Tahun 2021 Gelombang 2" style="width: 250px; height: auto;">
-        </div>
-        <!-- Body kartu -->
-        <div class="card-body text-center">
-          <h5 class="card-title">Pelaksanaan Asesmen Nasional Tahun 2021 Gelombang 2</h5>
-          <a href="/pelaksanaan_asesmen" class="btn mt-2 text-white rounded-3"
-            style="background-color: #F48000; width: 150px;">
-            SELENGKAPNYA
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4 d-flex justify-content-center">
-      <div class="card shadow rounded-4" style="width: 18rem;">
-        <!-- Wrapper untuk gambar agar berada di tengah -->
-        <div class="d-flex justify-content-center align-items-center p-3 pb-0">
-          <img src="{{ asset('images/survei.jpeg') }}" class="card-img-top rounded-3"
-            alt="Kegiatan Survei Lingkungan Belajar oleh Bapak/Ibu Guru dan Kepala Sekolah"
-            style="width: 250px; height: auto;">
-        </div>
-        <!-- Body kartu -->
-        <div class="card-body text-center">
-          <h5 class="card-title">Kegiatan Survei Lingkungan Belajar oleh Bapak/Ibu Guru dan Kepala Sekolah</h5>
-          <a href="/survei_lingkungan" class="btn mt-2 text-white rounded-3"
-            style="background-color: #F48000; width: 150px;">
-            SELENGKAPNYA
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4 d-flex justify-content-center">
-      <div class="card shadow rounded-4" style="width: 18rem;">
-        <!-- Wrapper untuk gambar agar berada di tengah -->
-        <div class="d-flex justify-content-center align-items-center p-3 pb-0">
-          <img src="{{ asset('images/penilaian-kinerja-kepsek.jpeg') }}" class="card-img-top rounded-3"
-            alt="Kegiatan Penilaian Kinerja Kepala Sekolah (PKKS) Tahun 2021" style="width: 250px; height: auto;">
-        </div>
-
-        <!-- Body kartu -->
-        <div class="card-body text-center">
-          <h5 class="card-title">Kegiatan Penilaian Kinerja Kepala Sekolah (PKKS) Tahun 2021</h5>
-          <a href="/penilaian_pekerja" class="btn mt-2 text-white rounded-3"
-            style="background-color: #F48000; width: 150px;">
-            SELENGKAPNYA
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row pt-4 p-5">
-    <div class="col-md-4 d-flex justify-content-center">
-      <div class="card shadow rounded-4" style="width: 18rem;">
-        <!-- Wrapper untuk gambar agar berada di tengah -->
-        <div class="d-flex justify-content-center align-items-center p-3 pb-0">
-          <img src="{{ asset('images/kompetisi-sains.jpeg') }}" class="card-img-top rounded-3"
-            alt="Kompetisi Sains Nasional (KSN) Tingkat Kota Semarang Tahun 2021" style="width: 250px; height: auto;">
-        </div>
-        <!-- Body kartu -->
-        <div class="card-body text-center">
-          <h5 class="card-title">Kompetisi Sains Nasional (KSN) Tingkat Kota Semarang Tahun 2021</h5>
-          <a href="/kompetisi_sains" class="btn mt-2 text-white rounded-3"
-            style="background-color: #F48000; width: 150px;">
-            SELENGKAPNYA
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4 d-flex justify-content-center">
-      <div class="card shadow rounded-4" style="width: 18rem;">
-        <!-- Wrapper untuk gambar agar berada di tengah -->
-        <div class="d-flex justify-content-center align-items-center p-3 pb-0">
-          <img src="{{ asset('images/imunisasi.jpeg') }}" class="card-img-top rounded-3"
-            alt="Bulan Imunisasi Anak Sekolah (BIAS) Tahun 2021" style="width: 250px; height: auto;">
-        </div>
-        <!-- Body kartu -->
-        <div class="card-body text-center">
-          <h5 class="card-title">Bulan Imunisasi Anak Sekolah (BIAS) Tahun 2021</h5>
-          <a href="/imunisasi" class="btn mt-2 text-white rounded-3" style="background-color: #F48000; width: 150px;">
-            SELENGKAPNYA
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4 d-flex justify-content-center">
-      <div class="card shadow rounded-4" style="width: 18rem;">
-        <!-- Wrapper untuk gambar agar berada di tengah -->
-        <div class="d-flex justify-content-center align-items-center p-3 pb-0">
-          <img src="{{ asset('images/hut-korps.jpeg') }}" class="card-img-top rounded-3"
-            alt="Upacara Peringatan HUT Korps Pegawai Republik Indonesia (KORPRI) ke-51 dengan Tema
-            Korpri Melayani, Berkontribusi dan Berinovasi untuk Negeri"
-            style="width: 250px; height: auto;">
-        </div>
-        <!-- Body kartu -->
-        <div class="card-body text-center">
-          <h5 class="card-title">Upacara Peringatan HUT Korps Pegawai Republik Indonesia (KORPRI) ke-51 dengan Tema
-            Korpri Melayani, Berkontribusi dan Berinovasi untuk Negeri</h5>
-          <a href="/upacara" class="btn mt-2 text-white rounded-3" style="background-color: #F48000; width: 150px;">
-            SELENGKAPNYA
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row pt-4 p-5">
-    <div class="col-md-4 d-flex justify-content-center">
-      <div class="card shadow rounded-4" style="width: 18rem;">
-        <!-- Wrapper untuk gambar agar berada di tengah -->
-        <div class="d-flex justify-content-center align-items-center p-3 pb-0">
-          <img src="{{ asset('images/sarapan-bersama.jpeg') }}" class="card-img-top rounded-3"
-            alt="Kegiatan Pembiasaan Sarapan Bersama" style="width: 250px; height: auto;">
-        </div>
-        <!-- Body kartu -->
-        <div class="card-body text-center">
-          <h5 class="card-title">Kegiatan Pembiasaan Sarapan Bersama di halaman SDN Bandarharjo 02 dengan menu makanan
-            sehat dan bergizi setiap hari Rabu minggu pertama setiap bulannya.</h5>
-          <a href="/sarapan_bersama" class="btn mt-2 text-white rounded-3"
-            style="background-color: #F48000; width: 150px;">
-            SELENGKAPNYA
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4 d-flex justify-content-center">
-      <div class="card shadow rounded-4" style="width: 18rem;">
-        <!-- Wrapper untuk gambar agar berada di tengah -->
-        <div class="d-flex justify-content-center align-items-center p-3 pb-0">
-          <img src="{{ asset('images/study.jpeg') }}" class="card-img-top rounded-3"
-            alt="Kegiatan Study Tiru Kurikulum Merdeka di SDN Sondakan Kota Sukarta Kamis, 20 Oktober
-            2022"
-            style="width: 250px; height: auto;">
-        </div>
-        <!-- Body kartu -->
-        <div class="card-body text-center">
-          <h5 class="card-title">Kegiatan Study Tiru Kurikulum Merdeka di SDN Sondakan Kota Sukarta Kamis, 20 Oktober
-            2022</h5>
-          <a href="#" class="btn mt-2 text-white rounded-3" style="background-color: #F48000; width: 150px;">
-            SELENGKAPNYA
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-4 d-flex justify-content-center">
-      <div class="card shadow rounded-4" style="width: 18rem;">
-        <!-- Wrapper untuk gambar agar berada di tengah -->
-        <div class="d-flex justify-content-center align-items-center p-3 pb-0">
-          <img src="{{ asset('images/menanam.jpeg') }}" class="card-img-top rounded-3"
-            alt="Gerakan Menanam, Kerja Bakti Massal, dan Kick off Urban Massal serentak sekota Semarang
-            di SDN Bandarharjo 02"
-            style="width: 250px; height: auto;">
-        </div>
-        <!-- Body kartu -->
-        <div class="card-body text-center">
-          <h5 class="card-title">Gerakan Menanam, Kerja Bakti Massal, dan Kick off Urban Massal serentak sekota Semarang
-            di SDN Bandarharjo 02</h5>
-          <a href="/menanam" class="btn mt-2 text-white rounded-3" style="background-color: #F48000; width: 150px;">
-            SELENGKAPNYA
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
+  </section>
 @endsection

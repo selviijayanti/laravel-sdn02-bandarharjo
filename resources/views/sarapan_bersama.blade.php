@@ -1,58 +1,49 @@
 @extends('layouts.main')
 
-@section('title', 'Kegiatan Pembiasaan Sarapan Bersama - SDN BANDARHARJO 02 SEMARANG')
+@section('title', 'Pembiasaan Sarapan Bersama - SDN BANDARHARJO 02 SEMARANG')
 
 @section('content')
-  <div class="" style="text-align: center; margin-top: 20px; margin-bottom: 20px;">
-    <h2 style="margin: 0; font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: 700; color: rgb(0, 0, 0);">
-      PEMBIASAAN SARAPAN BERSAMA
-    </h2>
-    <p style="margin: 10px 0; font-family: 'Poppins', sans-serif; font-size: 18px; font-weight: 400; color: rgb(0, 0, 0);">
-      Kegiatan pembiasaan sarapan bersama di SDN Bandarharjo 02 dilaksanakan setiap hari rabu minggu pertama di halaman
-      SDN Bandarharjo 02 dengan menu makanan yang bergizi. Untuk kegiatan Sarapan Bersama Rabu, 7 Desember 2022 menu
-      makanan bergizinya adalah nasi, sayur bayam dan ikan.
-    </p>
-  </div>
-  <div class="row pt-4 p-5">
-    <div class="col-md-4 d-flex justify-content-center">
-      <!-- Wrapper untuk gambar agar berada di tengah -->
-      <div class="d-flex justify-content-center align-items-center" style="padding: 20px;">
-        <img src="images/sarapan_bersama/1.jpeg" class="card-img-top" alt="..."
-          style="width: 400px; height: auto; border-radius: 10px;">
-      </div>
-    </div>
+  <section class="py-5 bg-light">
+    <div class="container" style="max-width: 960px;">
+      <a href="{{ url('/galeri/galeri-foto') }}" class="btn btn-outline-secondary btn-sm rounded-pill px-3 mb-4">
+        <i class="bi bi-arrow-left me-1"></i> Kembali ke Galeri Foto
+      </a>
 
-    <div class="col-md-4 d-flex justify-content-center">
-      <!-- Wrapper untuk gambar agar berada di tengah -->
-      <div class="d-flex justify-content-center align-items-center" style="padding: 20px;">
-        <img src="images/sarapan_bersama/2.jpeg" class="card-img-top" alt="..."
-          style="width: 400px; height: auto; border-radius: 10px;">
-      </div>
-    </div>
+      <div class="card border-0 shadow-sm rounded-4 overflow-hidden bg-white p-4 p-md-5 mb-4">
+        <div class="text-center mb-4">
+          <span class="badge rounded-pill px-3 py-2 text-uppercase mb-2" style="background-color: rgba(244, 128, 0, 0.15); color: #e07000; font-weight: 600;">
+            Program Kesehatan & Karakter
+          </span>
+          <h2 class="font-passion-one display-6 text-dark mb-2">
+            PEMBIASAAN SARAPAN BERSAMA
+          </h2>
+          <p class="text-muted small">SDN Bandarharjo 02 Semarang</p>
+        </div>
 
-    <div class="col-md-4 d-flex justify-content-center">
-      <!-- Wrapper untuk gambar agar berada di tengah -->
-      <div class="d-flex justify-content-center align-items-center" style="padding: 20px;">
-        <img src="images/sarapan_bersama/3.jpeg" class="card-img-top" alt="..."
-          style="width: 400px; height: auto; border-radius: 10px;">
-      </div>
-    </div>
-  </div>
-  <div class="row pt-4 p-5">
-    <div class="col-md-4 d-flex justify-content-center">
-      <!-- Wrapper untuk gambar agar berada di tengah -->
-      <div class="d-flex justify-content-center align-items-center" style="padding: 20px;">
-        <img src="images/sarapan_bersama/4.jpeg" class="card-img-top" alt="..."
-          style="width: 400px; height: auto; border-radius: 10px;">
-      </div>
-    </div>
+        <div class="content-body text-dark lh-lg mb-4" style="font-size: 16px;">
+          <p>
+            Kegiatan pembiasaan sarapan bersama di SDN Bandarharjo 02 dilaksanakan setiap hari Rabu minggu pertama di halaman
+            SDN Bandarharjo 02 dengan menu makanan yang bergizi. Program ini bertujuan menanamkan pola hidup sehat, kebersamaan,
+            dan membiasakan peserta didik untuk senantiasa sarapan pagi sebelum memulai aktivitas belajar.
+          </p>
+        </div>
 
-    <div class="col-md-4 d-flex justify-content-center">
-      <!-- Wrapper untuk gambar agar berada di tengah -->
-      <div class="d-flex justify-content-center align-items-center" style="padding: 20px;">
-        <img src="images/sarapan_bersama/5.jpeg" class="card-img-top" alt="..."
-          style="width: 400px; height: auto; border-radius: 10px;">
+        <h5 class="fw-bold mb-3"><i class="bi bi-images text-warning me-2"></i>Dokumentasi Kegiatan:</h5>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          @for ($i = 1; $i <= 5; $i++)
+            <div class="col">
+              <div class="card border-0 shadow-sm rounded-3 overflow-hidden h-100 hover-elevate transition-all">
+                <img
+                  src="{{ asset('images/sarapan_bersama/' . $i . '.jpeg') }}"
+                  class="w-100"
+                  alt="Sarapan Bersama Foto {{ $i }}"
+                  style="height: 200px; object-fit: cover;"
+                />
+              </div>
+            </div>
+          @endfor
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 @endsection

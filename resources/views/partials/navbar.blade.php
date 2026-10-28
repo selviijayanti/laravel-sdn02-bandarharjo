@@ -36,14 +36,11 @@
       <a class="nav-link dropdown-toggle {{ request()->is('lomba*') ? 'active' : '' }}" data-bs-toggle="dropdown"
         href="#" role="button" aria-expanded="false"
         {{ request()->is('lomba*') ? 'aria-current=page' : '' }}>Lomba</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Submenu lomba 1</a></li>
-        <li><a class="dropdown-item" href="#">Submenu lomba 2</a></li>
-        <li>
-          <hr class="dropdown-divider">
-        </li>
-        <li><a class="dropdown-item" href="#">Link lainnya</a></li>
-      </ul>
+        <ul class="dropdown-menu" aria-labelledby="dropdownLomba">
+          <li><a class="dropdown-item" href="https://youtu.be/uT1ib7nEhAI?si=YZRGgYarnyolgf6D" target="_blank">Lomba FLS2N SD Seni Tari</a></li>
+          <li><a class="dropdown-item" href="https://youtu.be/BuhiN84qZ3Y?si=vSmo24btFamezrR9" target="_blank">Lomba URBAN FARMING</a></li>
+          <li><a class="dropdown-item" href="https://youtu.be/L7BSCQSR05s?si=55bI4gK5qgD-xR-W" target="_blank">Lomba TARI FLSN 2019</a></li>
+        </ul>
     </li>
     <li class="nav-item dropdown">
       <div class="nav-icon"><img src="{{ asset('images/galeri.png') }}" alt=""></div>
@@ -69,10 +66,10 @@
       <a class="nav-link dropdown-toggle {{ request()->is('tautan*') ? 'active' : '' }}" data-bs-toggle="dropdown"
         href="#" role="button" aria-expanded="false"
         {{ request()->is('tautan*') ? 'aria-current=page' : '' }}>Tautan</a>
-      <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Tautan 1</a></li>
-        <li><a class="dropdown-item" href="#">Tautan 2</a></li>
-      </ul>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="https://www.kemdikbud.go.id/">Kemdikbud</a></li>
+          <li><a class="dropdown-item" href="https://disdiksmg.semarangkota.go.id/">Dinas Pendidikan</a></li>
+        </ul>
     </li>
     <li class="nav-item">
       <div class="nav-icon"><img src="{{ asset('images/kontak.png') }}" alt=""></div>

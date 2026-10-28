@@ -1,66 +1,49 @@
 @extends('layouts.main')
 
-@section('title', 'Kompetisi Sains Nasional (KSN) Tingkat Kota Semarang Tahun 2021 - SDN BANDARHARJO 02 SEMARANG')
+@section('title', 'Kompetisi Sains Nasional (KSN) - SDN BANDARHARJO 02 SEMARANG')
 
 @section('content')
-  <div class="" style="text-align: center; margin-top: 20px; margin-bottom: 20px;">
-    <h2 style="margin: 0; font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: 700; color: rgb(0, 0, 0);">
-      KSN TAHUN 2021
-    </h2>
-    <p style="margin: 10px 0; font-family: 'Poppins', sans-serif; font-size: 18px; font-weight: 400; color: rgb(0, 0, 0);">
-      Kegiatan KSN Tahun 2021 Tingkat Kota Semarang dilaksanakan per gugus se-Kota Semarang pada Jumat, 29 Oktober 2021 di
-      SDN Bandarharjo 02 yang diikuti oleh 3 SD Negeri yaitu SDN Bandarharjo 01, SDN Bandarharjo 02, dan SDN Tanjungmas.
-      Kegiatan KSN dilakukan secara daring. Soal KSN dikerjakan dengan menggunakan aplikasi Google Form. Sementara
-      pengawasan KSN dilakukan via Zoom oleh Panitia dari Dinas Pendidikan Kota Semarang.
-    </p>
-  </div>
-  <div class="row pt-4 p-5">
-    <div class="col-md-4 d-flex justify-content-center">
-      <!-- Wrapper untuk gambar agar berada di tengah -->
-      <div class="d-flex justify-content-center align-items-center" style="padding: 20px;">
-        <img src="images/kompetisi_sains/1.jpeg" class="card-img-top" alt="..."
-          style="width: 320px; height: auto; border-radius: 10px;">
-      </div>
-    </div>
+  <section class="py-5 bg-light">
+    <div class="container" style="max-width: 960px;">
+      <a href="{{ url('/galeri/galeri-foto') }}" class="btn btn-outline-secondary btn-sm rounded-pill px-3 mb-4">
+        <i class="bi bi-arrow-left me-1"></i> Kembali ke Galeri Foto
+      </a>
 
-    <div class="col-md-4 d-flex justify-content-center">
-      <!-- Wrapper untuk gambar agar berada di tengah -->
-      <div class="d-flex justify-content-center align-items-center" style="padding: 20px;">
-        <img src="images/kompetisi_sains/2.jpeg" class="card-img-top" alt="..."
-          style="width: 400px; height: auto; border-radius: 10px;">
-      </div>
-    </div>
+      <div class="card border-0 shadow-sm rounded-4 overflow-hidden bg-white p-4 p-md-5 mb-4">
+        <div class="text-center mb-4">
+          <span class="badge rounded-pill px-3 py-2 text-uppercase mb-2" style="background-color: rgba(255, 193, 7, 0.2); color: #b78103; font-weight: 600;">
+            Prestasi Akademik
+          </span>
+          <h2 class="font-passion-one display-6 text-dark mb-2">
+            KOMPETISI SAINS NASIONAL (KSN) TAHUN 2021
+          </h2>
+          <p class="text-muted small">Tingkat Kota Semarang • Jumat, 29 Oktober 2021</p>
+        </div>
 
-    <div class="col-md-4 d-flex justify-content-center">
-      <!-- Wrapper untuk gambar agar berada di tengah -->
-      <div class="d-flex justify-content-center align-items-center" style="padding: 20px;">
-        <img src="images/kompetisi_sains/3.jpeg" class="card-img-top" alt="..."
-          style="width: 200px; height: auto; border-radius: 10px;">
-      </div>
-    </div>
-  </div>
-  <div class="row pt-4 p-5">
-    <div class="col-md-4 d-flex justify-content-center">
-      <!-- Wrapper untuk gambar agar berada di tengah -->
-      <div class="d-flex justify-content-center align-items-center" style="padding: 20px;">
-        <img src="images/kompetisi_sains/4.jpeg" class="card-img-top" alt="..."
-          style="width: 400px; height: auto; border-radius: 10px;">
-      </div>
-    </div>
+        <div class="content-body text-dark lh-lg mb-4" style="font-size: 16px;">
+          <p>
+            Kegiatan KSN Tingkat Kota Semarang dilaksanakan per gugus pada Jumat, 29 Oktober 2021 di SDN Bandarharjo 02 dengan 
+            diikuti oleh 3 SD Negeri, yaitu SDN Bandarharjo 01, SDN Bandarharjo 02, dan SDN Tanjungmas. Kompetisi ini menguji 
+            kemampuan berpikir logis, analitis, dan pemecahan masalah siswa dalam bidang Matematika dan IPA.
+          </p>
+        </div>
 
-    <div class="col-md-4 d-flex justify-content-center">
-      <!-- Wrapper untuk gambar agar berada di tengah -->
-      <div class="d-flex justify-content-center align-items-center" style="padding: 20px;">
-        <img src="images/kompetisi_sains/5.jpeg" class="card-img-top" alt="..."
-          style="width: 400px; height: auto; border-radius: 10px;">
+        <h5 class="fw-bold mb-3"><i class="bi bi-images text-warning me-2"></i>Dokumentasi Kegiatan KSN:</h5>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          @for ($i = 1; $i <= 6; $i++)
+            <div class="col">
+              <div class="card border-0 shadow-sm rounded-3 overflow-hidden h-100 hover-elevate transition-all">
+                <img
+                  src="{{ asset('images/kompetisi_sains/' . $i . '.jpeg') }}"
+                  class="w-100"
+                  alt="KSN Foto {{ $i }}"
+                  style="height: 200px; object-fit: cover;"
+                />
+              </div>
+            </div>
+          @endfor
+        </div>
       </div>
     </div>
-    <div class="col-md-4 d-flex justify-content-center">
-      <!-- Wrapper untuk gambar agar berada di tengah -->
-      <div class="d-flex justify-content-center align-items-center" style="padding: 20px;">
-        <img src="images/kompetisi_sains/6.jpeg" class="card-img-top" alt="..."
-          style="width: 400px; height: auto; border-radius: 10px;">
-      </div>
-    </div>
-  </div>
+  </section>
 @endsection

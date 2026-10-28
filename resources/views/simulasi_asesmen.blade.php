@@ -1,60 +1,49 @@
 @extends('layouts.main')
 
-@section('title', 'Simulasi Asesmen Nasional Tahun 2021 Gelombang 2 - SDN BANDARHARJO 02 SEMARANG')
+@section('title', 'Simulasi Asesmen Nasional Gelombang 2 - SDN BANDARHARJO 02 SEMARANG')
 
 @section('content')
-  <div class="" style="text-align: center; margin-top: 20px; margin-bottom: 20px;">
-    <h2 style="margin: 0; font-family: 'Poppins', sans-serif; font-size: 24px; font-weight: 700; color: rgb(0, 0, 0);">
-      Pelaksanaan Simulasi Asesmen Nasional Gelombang 2 Kamis dan Jumat, 21 dan 22 Oktober 2021
-    </h2>
-    <p style="margin: 10px 0; font-family: 'Poppins', sans-serif; font-size: 18px; font-weight: 400; color: rgb(0, 0, 0);">
-      Kegiatan Simulasi Asesmen Nasional Tahun 2021 di SDN Bandarharjo 02 dilaksanakan selama 2 hari yaitu hari Kamis
-      tanggal 21 Oktober 2021 dan hari Jumat tanggal 22 Oktober 2021. Kegiatan Simulasi ini dilakukan dengan rincian
-      setiap hari terdapat 2 sesi. Sesi pertama dimulai pukul 08.00-10.00. Sedangkan sesi 2 dilaksanakan pukul
-      13.00-15.00. Kegiatan simulasi Asesmen Nasional (AN) Tahun 2021 menerapkan protokol kesehatan yaitu cek suhu tubuh,
-      cuci tangan sebelum masuk ruangan, duduk berjarak dan selalu memakai masker.
-    </p>
-  </div>
-  <div class="row pt-4 p-5">
-    <div class="col-md-4 d-flex justify-content-center">
-      <!-- Wrapper untuk gambar agar berada di tengah -->
-      <div class="d-flex justify-content-center align-items-center" style="padding: 20px;">
-        <img src="images/simulasi_asesmen/1.jpeg" class="card-img-top" alt="..."
-          style="width: 400px; height: auto; border-radius: 10px;">
-      </div>
-    </div>
+  <section class="py-5 bg-light">
+    <div class="container" style="max-width: 960px;">
+      <a href="{{ url('/galeri/galeri-foto') }}" class="btn btn-outline-secondary btn-sm rounded-pill px-3 mb-4">
+        <i class="bi bi-arrow-left me-1"></i> Kembali ke Galeri Foto
+      </a>
 
-    <div class="col-md-4 d-flex justify-content-center">
-      <!-- Wrapper untuk gambar agar berada di tengah -->
-      <div class="d-flex justify-content-center align-items-center" style="padding: 20px;">
-        <img src="images/simulasi_asesmen/2.jpeg" class="card-img-top" alt="..."
-          style="width: 400px; height: auto; border-radius: 10px;">
-      </div>
-    </div>
+      <div class="card border-0 shadow-sm rounded-4 overflow-hidden bg-white p-4 p-md-5 mb-4">
+        <div class="text-center mb-4">
+          <span class="badge rounded-pill px-3 py-2 text-uppercase mb-2" style="background-color: rgba(244, 128, 0, 0.15); color: #e07000; font-weight: 600;">
+            Akademik & Asesmen
+          </span>
+          <h2 class="font-passion-one display-6 text-dark mb-2">
+            SIMULASI ASESMEN NASIONAL GELOMBANG 2
+          </h2>
+          <p class="text-muted small">Kamis - Jumat, 21 - 22 Oktober 2021 • Laboratorium Komputer SDN Bandarharjo 02</p>
+        </div>
 
-    <div class="col-md-4 d-flex justify-content-center">
-      <!-- Wrapper untuk gambar agar berada di tengah -->
-      <div class="d-flex justify-content-center align-items-center" style="padding: 20px;">
-        <img src="images/simulasi_asesmen/3.jpeg" class="card-img-top" alt="..."
-          style="width: 400px; height: auto; border-radius: 10px;">
-      </div>
-    </div>
-  </div>
-  <div class="row pt-4 p-5">
-    <div class="col-md-4 d-flex justify-content-center">
-      <!-- Wrapper untuk gambar agar berada di tengah -->
-      <div class="d-flex justify-content-center align-items-center" style="padding: 20px;">
-        <img src="images/simulasi_asesmen/4.jpeg" class="card-img-top" alt="..."
-          style="width: 400px; height: auto; border-radius: 10px;">
-      </div>
-    </div>
+        <div class="content-body text-dark lh-lg mb-4" style="font-size: 16px;">
+          <p>
+            Kegiatan Simulasi Asesmen Nasional Tahun 2021 di SDN Bandarharjo 02 dilaksanakan selama 2 hari yaitu hari Kamis
+            tanggal 21 Oktober 2021 dan hari Jumat tanggal 22 Oktober 2021. Simulasi ini terbagi dalam 2 sesi per hari (Sesi 1: 08.00–10.00 WIB, 
+            Sesi 2: 13.00–15.00 WIB) guna memastikan kesiapan perangkat komputer, jaringan internet, serta pemahaman teknis siswa peserta AN.
+          </p>
+        </div>
 
-    <div class="col-md-4 d-flex justify-content-center">
-      <!-- Wrapper untuk gambar agar berada di tengah -->
-      <div class="d-flex justify-content-center align-items-center" style="padding: 20px;">
-        <img src="images/simulasi_asesmen/5.jpeg" class="card-img-top" alt="..."
-          style="width: 400px; height: auto; border-radius: 10px;">
+        <h5 class="fw-bold mb-3"><i class="bi bi-images text-warning me-2"></i>Dokumentasi Simulasi Asesmen:</h5>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          @for ($i = 1; $i <= 5; $i++)
+            <div class="col">
+              <div class="card border-0 shadow-sm rounded-3 overflow-hidden h-100 hover-elevate transition-all">
+                <img
+                  src="{{ asset('images/simulasi_asesmen/' . $i . '.jpeg') }}"
+                  class="w-100"
+                  alt="Simulasi Asesmen Foto {{ $i }}"
+                  style="height: 200px; object-fit: cover;"
+                />
+              </div>
+            </div>
+          @endfor
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 @endsection
